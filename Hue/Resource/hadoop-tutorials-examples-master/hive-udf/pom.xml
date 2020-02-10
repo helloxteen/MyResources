@@ -37,7 +37,7 @@
   <url>http://gethue.com</url>
 
   <properties>
-    <hive.version>1.1.0-cdh5.5.0-SNAPSHOT</hive.version>
+    <hive.version>2.3.4</hive.version>
     <hadoop.version>2.6.0-cdh5.5.0-SNAPSHOT</hadoop.version>
   </properties>
 
