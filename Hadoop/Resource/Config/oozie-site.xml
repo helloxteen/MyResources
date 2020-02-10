@@ -1,0 +1,61 @@
+
+<configuration>
+	<property>
+		<name>oozie.service.JPAService.jdbc.driver</name>
+		<value>com.mysql.cj.jdbc.Driver</value>
+	</property>
+
+
+	<property>
+		<name>oozie.service.JPAService.jdbc.url</name>
+		<value>jdbc:mysql://mysql:3306/oozie_standalone</value>  <!-- 千万别写成master:3306,得是localhost:3306 -->
+	</property>
+
+
+	<property>
+		<name>oozie.service.JPAService.jdbc.username</name>
+		<value>root</value>
+	</property>
+
+
+	<property>
+		<name>oozie.service.JPAService.jdbc.password</name>
+		<value>xteen</value>
+	</property>
+
+
+	<property>
+		<name>oozie.service.HadoopAccessorService.hadoop.configurations</name>
+		<value>*=/opt/software/hadoop/hadoop/etc/hadoop</value>
+	</property>
+
+
+	<property>
+		<name>oozie.service.WorkflowAppService.system.libpath</name>
+		<value>hdfs://standalone:8020/user/root/share/lib</value>
+	</property>
+	<property>
+		<name>oozie.email.smtp.host</name>
+		<value>smtp.qq.com</value>
+	</property>
+	<property>
+		<name>oozie.email.smtp.port</name>
+		<value>25</value>
+	</property>
+	<property>
+		<name>oozie.email.smtp.auth</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>oozie.email.from.address</name>
+		<value>691589300@qq.com</value>
+	</property>
+	<property>
+		<name>oozie.email.smtp.username</name>
+		<value>691589300@qq.com</value>
+	</property>
+	<property>
+		<name>oozie.email.smtp.password</name>
+		<value>dtrweykpsswwbeji</value>
+	</property>
+</configuration>
