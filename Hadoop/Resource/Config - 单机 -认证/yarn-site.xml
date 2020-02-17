@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+	<!-- reducer取数据的方式是mapreduce_shuffle -->
+	<property>
+		<name>yarn.nodemanager.aux-services</name>
+		<value>mapreduce_shuffle</value>
+	</property>
+	<!-- 开启多线程-->
+	<property>
+		<name>yarn.resourcemanager.scheduler.class</name>
+		<value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.FairScheduler</value>
+	</property>
+	<!--开启公平调度器 -->
+	<property>
+		<name>yarn.scheduler.fair.preemption</name>
+		<value>true</value>
+	</property>
+	<!--下面配置用来设置集群利用率的阀值， 默认值0.8f，最多可以抢占到集群所有资源的80%-->
+	<property>
+		<name>yarn.scheduler.fair.preemption.cluster-utilization-threshold</name>
+		<value>1.0</value>
+	</property>
+	<property>  
+		<name>yarn.log-aggregation-enable</name>  
+		<value>true</value>  
+	</property>
+	<property>
+		<name>yarn.resourcemanager.webapp.address</name>
+		<value>standalone:8088</value>
+	</property>
+	<property>
+		<name>yarn.nodemanager.vmem-pmem-ratio</name>
+		<value>5</value>
+	</property>
+</configuration>
