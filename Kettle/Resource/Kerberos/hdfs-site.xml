@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>dfs.replication</name>
+		<value>1</value>
+	</property>
+	<property>
+		<name>dfs.namenode.name.dir</name>
+		<value>file:///opt/software/hadoop/hadoop/tmp_data/dfs/name</value>
+	</property>
+	<property>
+		<name>dfs.datanode.data.dir</name>
+		<value>file:///opt/software/hadoop/hadoop/tmp_data/dfs/data</value>
+	</property>
+	<property>
+		<name>dfs.webhdfs.enabled</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>dfs.http.address</name>
+		<value>standalone:50070</value>
+	</property>
+		<property>
+		<name>dfs.https.address</name>
+		<value>standalone:50470</value>
+	</property>
+	<property>
+		<name>dfs.secondary.http.address</name>
+		<value>standalone:50090</value>
+	</property>
+	<property>
+		<name>dfs.datanode.address</name>
+		<value>standalone:50010</value>
+	</property>
+	<property>
+		<name>dfs.datanode.ipc.address</name>
+		<value>standalone:50020</value>
+	</property>
+	<property>
+		<name>dfs.datanode.http.address</name>
+		<value>standalone:50075</value>
+	</property>
+	<property>
+		<name>dfs.datanode.https.address</name>
+		<value>standalone:50475</value>
+	</property>
+	<property>
+		<name>dfs.block.access.token.enable</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>dfs.namenode.keytab.file</name>
+		<value>D:/Coder/Software/pdi-ce-8.2.0/data-integration/plugins/pentaho-big-data-plugin/hadoop-configurations/hdp26/hadoop.keytab</value>
+	</property>
+	<property>
+		<name>dfs.namenode.kerberos.principal</name>
+		<value>hadoop/standalone@XTEEN.COM</value>
+	</property>
+	<property>
+		<name>dfs.namenode.kerberos.internal.spnego.principal</name>
+		<value>HTTP/standalone@XTEEN.COM</value>
+	</property>
+	<property>
+		<name>dfs.datanode.keytab.file</name>
+		<value>D:/Coder/Software/pdi-ce-8.2.0/data-integration/plugins/pentaho-big-data-plugin/hadoop-configurations/hdp26/hadoop.keytab</value>
+	</property>
+	<property>
+		<name>dfs.datanode.kerberos.principal</name>
+		<value>hadoop/standalone@XTEEN.COM</value>
+	</property>
+	<property>
+		<name>dfs.datanode.address</name>
+		<value>standalone:1004</value>
+	</property>
+	<property>
+		<name>dfs.datanode.http.address</name>
+		<value>standalone:1006</value>
+	</property>
+	<property>
+		<name>dfs.journalnode.keytab.file</name>
+		<value>D:/Coder/Software/pdi-ce-8.2.0/data-integration/plugins/pentaho-big-data-plugin/hadoop-configurations/hdp26/hadoop.keytab</value>
+	</property>
+	<property>
+		<name>dfs.journalnode.kerberos.principal</name>
+		<value>hadoop/standalone@XTEEN.COM</value>
+	</property>
+	<property>
+		<name>dfs.journalnode.kerberos.internal.spnego.principal</name>
+		<value>HTTP/standalone@XTEEN.COM</value>
+	</property>
+	<property>
+		<name>dfs.webhdfs.enabled</name>
+		<value>true</value>
+	</property>
+	<property>
+		<name>dfs.web.authentication.kerberos.principal</name>
+		<value>HTTP/standalone@XTEEN.COM</value>
+	</property>
+	<property>
+		<name>dfs.web.authentication.kerberos.keytab</name>
+		<value>D:/Coder/Software/pdi-ce-8.2.0/data-integration/plugins/pentaho-big-data-plugin/hadoop-configurations/hdp26/hadoop.keytab</value>
+	</property>
+	<property>
+		<name>krb5_file_location</name>
+		<value>C:/Windows/krb5.ini</value>
+	</property>
+	<property>
+		<name>krb5_user_principal</name>
+		<value>hadoop/standalone@XTEEN.COM</value>
+	</property>
+	<property>
+		<name>krb5_user_keytab</name>
+		<value>D:/Coder/Software/pdi-ce-8.2.0/data-integration/plugins/pentaho-big-data-plugin/hadoop-configurations/hdp26/hadoop.keytab</value>
+	</property>
+</configuration>
